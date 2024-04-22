@@ -1,0 +1,365 @@
+.mainContent {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 48px;
+  margin-bottom: 60px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent h2 {
+  font-size: 84px;
+  font-weight: 400;
+  margin-top: -68px;
+  margin-bottom: 160px;
+  color: rgb(250, 223, 0);
+  text-transform: uppercase;
+  font-family: "intro_black";
+  line-height: 78px;
+  padding: 0 1.92%;
+}
+
+
+
+
+.wedo {
+  padding: 48px 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.wedoContainer {
+  margin-left: calc(-4% / 2);
+  margin-right: calc(-4% / 2);
+  padding: 0 15px;
+  max-width: 1400px;
+}
+
+.wedoContainer div {
+  height: auto;
+}
+
+.wedoContainer .h2 {
+  font-family: 'intro_black';
+  float: left;
+  width: 100%;
+  color: #fadf00;
+  font-size: 84px;
+  line-height: 78px;
+  text-transform: uppercase;
+  margin: -64px 0 160px 0;
+  position: relative;
+  z-index: 2;
+  padding: 0 1.92%;
+}
+
+
+
+
+
+
+
+
+.ourWork {
+  padding: 0 30px;
+  background-color: #fadf00;
+  display: flex;
+  justify-content: center;
+}
+
+.ourWork .h2 {
+  font-family: 'intro_black';
+  float: left;
+  width: 100%;
+  color: #0f2b59;
+  font-size: 84px;
+  line-height: 78px;
+  text-transform: uppercase;
+  margin: -38px 0 50px 0;
+  font-size: 84px;
+  text-align: left;
+  width: 100%;
+  line-height: 78px;
+  padding: 0 1.92%;
+}
+
+.ourWork .ourWorkContainer {
+  margin-left: calc(-4% / 2);
+  margin-right: calc(-4% / 2);
+  padding: 0 15px 20px;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.portafolio {
+  display: flex;
+  justify-content: center;
+}
+
+.portafolio a {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  color: rgb(15, 43, 89);
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 4px solid #0F2B59;
+  padding: 0 0 8px 0;
+  display: flex;
+  font-family: 'intro_black_altregular';
+  margin-bottom: 80px;
+}
+
+.portafolio a:after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  background: rgb(255, 255, 255);
+  transition: .5s;
+}
+
+.portafolio a:hover:after {
+  width: 0;
+  background: rgb(255, 255, 255);
+}
+
+.clients {
+  padding-bottom: 120px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.clientCont {
+  margin-left: calc(-4% / 2);
+  margin-right: calc(-4% / 2);
+  padding: 0 15px;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.clientCont .imgCont {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.clientCont .imgCont div {
+  width: 16.66666666%;
+  max-width: 16.66666%;
+  margin-bottom: 20px;
+}
+
+.clientCont .imgCont img {
+  max-width: 100%;
+  width: 100%;
+  min-width: 100%;
+  padding: 0 11.5%;
+}
+
+.clientCont .imgCont div:nth-child(n+7) {
+  margin-top: 40px;
+}
+
+.clients .h2 {
+  color: rgb(15, 43, 89);
+  font-weight: 400;
+  font-size: 84px;
+  font-family: 'intro_black';
+  margin-bottom: 70px;
+  margin-top: -37px;
+  line-height: 78px;
+  padding: 0 1.92%;
+}
+
+.about {
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 50px;
+  background-image: url('../../public/img/bg2-300x121.jpg');
+  background-blend-mode: normal;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url(https://justgetvisible.com/wp-content/uploads/2016/06/bg2-300x121.jpg);
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about .h2 {
+  color: #FADF00;
+  font-weight: 400;
+  font-size: 84px;
+  font-family: 'intro_black';
+  margin-bottom: 50px;
+  margin-top: -89px;
+  line-height: 78px;
+  padding: 0 1.92%;
+}
+
+.about .infocont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space;
+}
+
+.about .fistCont,
+.about .secondCont,
+.aboutCont .imgCont {
+  width: 33.333%;
+  margin-bottom: 20px;
+}
+
+.aboutCont .imgCont {
+  display: flex;
+}
+
+.aboutCont .imgCont img {
+  max-width: 100%;
+  height: auto;
+}
+
+.aboutCont .imgCont div {
+  display: flex;
+  align-items: flex-start;
+}
+
+.about .fistCont div,
+.about .secondCont div,
+.aboutCont .imgCont div {
+  padding: 0 5.75%;
+}
+
+.fistCont .text {
+  color: #fff;
+  font-family: "intro_lightregular";
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  padding-left: 30px;
+  padding-top: 0;
+  position: relative;
+  margin-top: 0;
+  line-height: 25px;
+}
+
+.about .aboutCont {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.fistCont .text:before {
+  position: absolute;
+  lefT: 0;
+  top: 0;
+  bottom: 0;
+  content: '';
+  width: 4px;
+  background: #FADF00;
+  height: 100%;
+  float: left;
+}
+
+.secondCont .text {
+  padding-bottom: 10px;
+  color: #fff;
+  font-family: "intro_lightregular";
+  line-height: 25px;
+}
+
+.fistCont .contact {
+  display: flex;
+  justify-content: center;
+}
+
+.fistCont .contact div {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  color: #FFF;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 4px solid #FFF;
+  padding: 0 0 8px 0;
+  display: flex;
+  font-family: 'intro_black_altregular';
+}
+
+.fistCont .contact div:after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  background: #FADF00;
+  transition: .5s;
+}
+
+.fistCont .contact div:hover:after {
+  width: 0;
+}
+
+@media screen and (max-width: 760px) {
+  .infocont {
+    flex-direction: column !important;
+  }
+
+  .infocont div {
+    width: 100% !important;
+  }
+
+  .contact {
+    max-width: 270px;
+  }
+
+  .imgCont img {
+    width: 100%;
+    height: auto;
+  }
+
+  .aboutCont .h2,
+  .clientCont .h2,
+  .ourWorkContainer .h2 {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .imgCont {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imgCont div {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .wedoContainer {
+    padding: 0;
+  }
+
+  .wedoContainer .h2 {
+    font-size: 44px;
+    transform: translateY(-15px);
+    margin-bottom: 50px;
+  }
+}

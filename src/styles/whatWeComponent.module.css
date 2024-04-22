@@ -1,0 +1,177 @@
+.WhatWeComponent {
+  position: relative;
+  float: left;
+  widtH: 30%;
+  margin: 0 0 80px 0;
+  padding-bottom: 20px;
+  margin-left: 3%;
+}
+
+.WhatWeComponent:nth-child(1),
+.WhatWeComponent:nth-child(4) {
+  margin-left: 0;
+}
+
+.WhatWeComponentContainer {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  pointer-events: none;
+  justify-content: flex-start;
+  margin: 0 5.76%;
+}
+
+.infoCont {
+  padding: 82px 40px 40px 40px;
+}
+
+.infoCont p {
+  margin-bottom: 20px;
+}
+
+.infoCont .h1 {
+  position: relative;
+  font-family: 'intro_black';
+  width: 100%;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #061836;
+  margin: 0 0 10px 70px;
+  display: block;
+  line-height: 20px !important;
+  max-width: 100%;
+}
+
+.infoCont .h1:after {
+  content: '';
+  width: 160px;
+  height: 140px;
+  position: absolute;
+  top: -131px;
+  left: -70px;
+  background-size: 100%;
+  -webkit-background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.WhatWeComponent:nth-child(1) .infoCont .h1:after {
+  background-image: url('https://justgetvisible.com/wp-content/themes/Avada/images/ico-02.png');
+}
+
+.WhatWeComponent:nth-child(2) .infoCont .h1:after {
+  background-image: url('https://justgetvisible.com/wp-content/themes/Avada/images/ico-01.png');
+}
+
+.WhatWeComponent:nth-child(3) .infoCont .h1:after {
+  background-image: url('https://justgetvisible.com/wp-content/themes/Avada/images/ico-03.png');
+}
+
+.WhatWeComponent:nth-child(4) .infoCont .h1:after {
+  background-image: url('https://justgetvisible.com/wp-content/themes/Avada/images/ico-03.png');
+}
+
+.WhatWeComponent:nth-child(5) .infoCont .h1:after {
+  background-image: url('https://justgetvisible.com/wp-content/themes/Avada/images/ico-02.png');
+}
+
+.WhatWeComponent:nth-child(6) .infoCont .h1:after {
+  background-image: url('https://justgetvisible.com/wp-content/themes/Avada/images/ico-01.png');
+}
+
+.infoCont .text {
+  font-family: 'intro_lightregular';
+  float: left;
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  color: #061836;
+}
+
+.wraphover {
+  overflow: hidden;
+  transition: .6s;
+  width: 100%;
+  position: absolute;
+  left: -5px;
+  top: -20px;
+  right: 0;
+  height: 100%;
+  bottom: 0;
+  opacity: 0;
+}
+
+.wraphover span {
+  border: 5px solid #FADF00;
+  position: absolute;
+  top: 0;
+  lefT: 0;
+  righT: 5px;
+  bottom: 0;
+  width: 96%;
+  height: 96%;
+  min-width: 96%;
+}
+
+.wraphover:after {
+  content: '';
+  width: 120px;
+  height: 20px;
+  position: absolute;
+  top: -10px;
+  left: 110px;
+  background: #FFF;
+}
+
+.wraphover span:after {
+  content: '';
+  width: 43px;
+  height: 46px;
+  display: block;
+  position: absolute;
+  top: -5px;
+  righT: -5px;
+  background: url('https://justgetvisible.com/wp-content/themes/Avada/images/cut3.png');
+  background-repeat: repeat;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 1;
+}
+
+.WhatWeComponent:hover .wraphover {
+  opacity: 1;
+  transition: .3s;
+}
+
+
+@media screen and (max-width: 860px){
+.WhatWeComponent {
+    width: 47%;
+    margin: 0 1%;
+    margin-bottom: 3%;
+}}
+
+@media screen and (max-width: 660px){
+.WhatWeComponent {
+  width: 90%;
+  margin: 0 1%;
+  margin-bottom: 3%;
+}}
+@media screen and (max-width: 350px){
+  .WhatWeComponent .infoCont .h1:after{
+    width: 120px;
+    height: 120px;
+    transform: translateY(40px);
+  }
+  .infoCont .h1{
+    font-size: 25px;
+  }
+  .WhatWeComponent {
+    width: 80%;
+  }
+  .WhatWeComponentContainer{
+    padding:  0 !important;
+  }
+}

@@ -1,0 +1,151 @@
+.footer{
+  border-bottom: 12px solid #FADF00;
+  padding: 30px 15px;
+}
+.footer .container{
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .img{
+  margin: 0 60px 0 0;
+}
+.footer .copyrigth{
+  font-family: 'intro_lightregular';
+  float: left;
+  color: #607397;
+  font-size: 11px;
+  font-weight: normal;
+}
+.footer .leftoption{
+  padding: 7px 0;
+  display: flex;
+  width: 50%;
+}
+.footer .leftoption .linkList{
+  margin-bottom: 30px;
+}
+.footer .leftoption .linkList .link{
+  position: relative;
+  color: #222d58;
+  text-decoration: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 4px solid #0F2B59;
+  padding: 0 0 8px 0;
+  margin-left: 50px;
+  font-family: 'intro_black_altregular';
+}
+.footer .leftoption .linkList .link:after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  background: #fadf00;
+  transition: .5s;
+}
+
+.footer .leftoption .linkList .link:hover:after {
+  width: 0;
+}
+
+
+.footer .leftoption .linkList .link:first-child{
+  margin-left: 0px;
+}
+
+.footer .rightoption{
+  padding: 7px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+}
+.footer .rightoption .linkList{
+  margin-bottom: 30px;
+}
+.footer .rightoption .linkList .link{
+  position: relative;
+  color: #222d58;
+  text-decoration: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'intro_black_altregular';
+  padding: 0 0 8px 0;
+  margin-left: 50px;
+  transition: .4s;
+}
+.footer .rightoption .linkList .link:last-child{
+  margin-right: 0px;
+}
+.footer .copyLsCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+}
+.footer .rightoption .copyrigth{
+  margin-left: 50px;
+}
+.footer .rightoption .linkList .link:hover {
+  color: #FADF00;
+}
+
+@media screen and (max-width: 1120px){
+  .footer .leftoption .linkList .link, .footer .rightoption .linkList .link{
+    margin-left: 25px;
+  }
+}
+@media screen and (max-width: 980px){
+  .container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .rightoption, .footer .leftoption{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .img{
+    position: absolute;
+    left: 15px;
+  }
+  .footer .leftoption{
+    margin-bottom: 30px;
+  }
+  .footer .leftoption .linkList{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .leftoption, .rightoption{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      align-items: center;
+  }
+  .leftoption img{
+    position: relative !important;
+    margin-bottom: 30px !important;
+  
+  }.copyLsCont{
+    display: flex !important;
+    align-items: center;
+    justify-content: center !important;
+  }
+  .copyLsCont span{
+    margin: 0 10px !important;
+  }
+  .linkList .link{
+    margin: 0 10px !important;
+  }
+  .copyrigth{
+    text-align: center;
+  }
+}

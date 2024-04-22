@@ -1,0 +1,185 @@
+.principaCont{
+  position: relative;
+  float: left;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100%;
+}
+.fistCont{
+  position: absolute;
+  lefT: 0;
+  top: 0;
+  righT: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #0F2B59;
+}
+.principaCont i{
+  width: 480px;
+  height: 307px;
+  position: absolute;
+  bottom: 0;
+  righT: 0;
+  display: block;
+  background: url("https://justgetvisible.com/wp-content/themes/Avada/images/pattern/11.svg");
+    background-repeat: repeat;
+    background-size: auto;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 3;
+}
+.fistCont .backImg{
+  position: absolute;
+  lefT: 0;
+  top: 0;
+  righT: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-image: url("https://justgetvisible.com/wp-content/themes/Avada/images/bg_main.jpg");
+  z-index: 1;
+
+}
+.fistCont i{
+  position: absolute;
+  top: 0;
+  left: 0;
+  righT: 0;
+  bottom: 0;
+  background: rgba(15, 43, 89, 0.65);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.container{
+  position: relative;
+  max-width: 1400px;
+  margin: auto;
+  display: block;
+  padding: 0 15px;
+  height: 100%;
+  z-index: 5;
+  padding: 0 15px;
+}
+.infoTitle{
+  position: absolute;
+  lefT: 50%;
+  top: 50%;
+  width: 820px;
+  height: 400px;
+  display: table;
+  z-index: 3;
+  color: red;
+  margin: -167px 0 0 -500px;
+}
+.infoCont{
+  position: absolute;
+  top: 0;
+  left: 121px;
+  float: left;
+  width: 100%;
+  height: 100%;
+  transform: translateY(95px);
+}
+
+.infoCont span{
+  float: left;
+  width: 100%;
+}
+.litleTitle{
+  font-family: 'intro_regularregular';
+  color: #FFF;
+  display: block;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 13px;
+  letter-spacing: 0.13em;
+  margin: 0 0 10px 140px;
+  height: 0;
+  display: block;
+  overflow: visible;
+  transition: .7s;
+    transition-delay: 0s;
+  transition-delay: 0.8s;
+}
+
+.infoCont h2{
+  font-family: 'intro_black';
+  font-size: 84px;
+  text-transform: uppercase;
+  display: block;
+  color: #fadf00;
+  line-height: 0.95;
+}
+.infoCont h2 p{
+  font-family: 'intro_black';
+  height: 72px;
+  float: left;
+  line-height: 0.95;
+  width: 100%;
+  color: #fadf00;
+  font-size: 84px;
+  font-weight: 400;
+}
+.infoTitle:after {
+  content: '';
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 530px;
+  height: 340px;
+  background: url("https://justgetvisible.com/wp-content/themes/Avada/images/pattern/14.svg");
+    background-size: auto;
+  background-size: 100%;
+}
+
+i:hover ul.submenu, .mainmenu li ul.submenu:hover {
+  display: block;
+}
+
+@media screen and (max-width: 860px){
+  .principaCont i {
+    background-image: none;
+  } 
+  .infoCont h2 p {
+    height: 60px;
+  }
+  .infoTitle{
+    transform: translateX(100px);
+  }
+}
+@media screen and (max-width: 568px){
+  .infoTitle{
+    text-align: center;
+    max-width: 100%;
+    margin: 0;
+    left: 0;
+    transform: translate(0);
+    top:150px;
+  }
+  .infoCont{
+    left: 0;
+  }
+  .infoTitle:after{
+    display: none;
+  } 
+  .infoCont span h3{
+    margin-left: 0;
+  }
+  .infoTitle h2 p{
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 280px){
+  .infoCont span h3{
+    font-size: 10px;
+  }
+  .infoTitle h2 p{
+    font-size: 40px;
+  }
+}
